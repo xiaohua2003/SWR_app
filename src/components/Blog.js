@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 
 
-function App() {
+function Blog() {
   const [post, setPost] = useState('');
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts').then(
@@ -18,7 +18,7 @@ function App() {
           return (
             <div key={val.id}>
              <h2>Title: {val.title}</h2>
-             <p>Body: {val.body}</p>
+             {/* <p>Body: {val.body}</p> */}
        
             </div>
       
@@ -29,4 +29,4 @@ function App() {
   );
 }
 
-export default App;
+export default Blog;
