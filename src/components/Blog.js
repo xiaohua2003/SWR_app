@@ -18,7 +18,7 @@ function Blog() {
           return (
             <div key={val.id}>
              <h2>Title: {val.title}</h2>
-             {/* <p>Body: {val.body}</p> */}
+
        
             </div>
       
